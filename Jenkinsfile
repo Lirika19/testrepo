@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/AliyunContainerService/redis-cluster'
+                git 'https://github.com/Lirika19/testrepo'
             }
         }
         stage('Setup Environment') {
