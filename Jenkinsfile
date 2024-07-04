@@ -20,7 +20,6 @@ pipeline {
         stage('Deploy Redis Cluster') {
             steps {
                 sh '''
-                cd testrepo
                 docker-compose up -d
                 '''
             }
