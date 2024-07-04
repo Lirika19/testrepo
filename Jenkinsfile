@@ -9,6 +9,7 @@ pipeline {
         stage('Setup Environment') {
             steps {
                 sh '''
+                export DEBIAN_FRONTEND=noninteractive
                 sudo apt update
                 sudo apt install -y docker.io docker-compose
                 sudo systemctl start docker
@@ -26,3 +27,4 @@ pipeline {
         }
     }
 }
+
